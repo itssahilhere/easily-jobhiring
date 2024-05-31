@@ -1,0 +1,109 @@
+<header>
+  <style>
+    .nav-item a {
+      opacity: 0.7;
+    }
+    .nav-item a:hover {
+      opacity: 1;
+      filter: brightness(150%);
+    }
+    #text-color {
+      color: #fff;
+    }
+    #mynav {
+      background-color: #181642 !important;
+      color: white;
+      box-shadow: rgba(240, 244, 248, 0.2) 0px 1px 10px;
+    }
+  </style>
+  <nav class="navbar navbar-expand-lg navbar-light" id="mynav">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="text-color" href="/">easily</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              id="text-color"
+              aria-current="page"
+              href="/"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="text-color" href="/jobs">Jobs</a>
+          </li>
+          <% if(locals.userEmail) {%>
+          <li class="nav-item dropdown" id="text-color">
+            <a
+              class="nav-link dropdown-toggle"
+              id="text-color"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <%= name %>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="/logout">Logout</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/postjob">Post New Job</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+            </ul>
+          </li>
+          <% }else { %>
+          <li class="nav-item dropdown" id="text-color">
+            <a
+              class="nav-link dropdown-toggle"
+              id="text-color"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Recuriter
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="/login">Login</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/postjob">Post New Job</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+            </ul>
+          </li>
+          <% } %>
+        </ul>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" id="text-color" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>

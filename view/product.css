@@ -1,0 +1,102 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#mynav{
+    background-color: #181642 !important;
+    color: white;
+    box-shadow: rgba(240, 244, 248, 0.2) 0px 1px 10px;
+}
+#text-color{
+    color: #fff;
+}
+.container-lpage {
+    background-color: #181642;
+    height: 100vh;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+.main-heading {
+    color: #FF2C90;
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+.text-white {
+    --bs-text-opacity: 1;
+    color: rgb(255, 255, 255) !important;
+}
+.lbtn {
+    background-color: #FF2C90;
+    color: #FFFFFF;
+}
+.typed {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing  infinite;
+    transition: typing 20s ease;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+  }
+    
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+.nav-item a{
+    opacity: .7;
+}
+.nav-item a:hover{
+    opacity: 1;
+    filter:brightness(150%);
+}
+.justify-content-center {
+    justify-content: center !important;
+}
+.fw-bold {
+    font-weight: 700 !important;
+}
+.skills {
+    margin: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+button:not(:disabled) {
+    cursor: pointer;
+}
+.bg-theme {
+    background-color: #0e0d23;
+    color: white;
+}
+.min-vh-100 {
+    min-height: 100vh !important;
+}
+[class*=" bi-"]::before {
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: text-bottom;
+    -webkit-font-smoothing: antialiased;
+}
+.text-success {
+    color: rgba(25, 135, 84) !important;
+    opacity: 1;
+    filter: brightness(4.5)
+}
