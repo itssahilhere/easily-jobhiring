@@ -48,7 +48,6 @@ The job portal website is designed to streamline the job search process for both
 ## Tech Stack
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Node.js, Express.js
-- **Database**: MongoDB
 - **Templating Engine**: EJS
 - **Version Control**: Git
 
